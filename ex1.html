@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorias da Refeição</title>
+</head>
+<body>
+    <script>
+        // Opções de pratos, sobremesas e bebidas com suas respectivas calorias
+        const calorias = {
+            pratos: [180, 230, 250, 350],
+            sobremesas: [75, 110, 170, 200],
+            bebidas: [20, 70, 100, 65]
+        };
+
+        // Solicitar opções ao usuário
+        const prato = parseInt(prompt("Escolha o prato:\n1 - Vegetariano\n2 - Peixe\n3 - Frango\n4 - Carne"));
+        const sobremesa = parseInt(prompt("Escolha a sobremesa:\n1 - Abacaxi\n2 - Sorvete diet\n3 - Mouse diet\n4 - Mouse chocolate"));
+        const bebida = parseInt(prompt("Escolha a bebida:\n1 - Chá\n2 - Suco de laranja\n3 - Suco de melão\n4 - Refrigerante diet"));
+
+        // Calcular calorias totais
+        const totalCalorias = calorias.pratos[prato - 1] + calorias.sobremesas[sobremesa - 1] + calorias.bebidas[bebida - 1];
+
+        // Exibir resultado
+        document.write(`A quantidade total de calorias da refeição é: ${totalCalorias}`);
+    </script>
+</body>
+</html>

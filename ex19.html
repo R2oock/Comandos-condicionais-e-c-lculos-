@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Dólares para Reais</title>
+</head>
+<body>
+    <script>
+        const cotacaoDolar = parseFloat(prompt("Digite a cotação do dólar:"));
+        const quantidadeDolares = parseFloat(prompt("Digite a quantidade de dólares:"));
+        const valorReais = cotacaoDolar * quantidadeDolares;
+
+        document.write(`O valor em reais é: R$ ${valorReais.toFixed(2)}`);
+    </script>
+</body>
+</html>

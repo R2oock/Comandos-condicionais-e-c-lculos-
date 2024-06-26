@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário com Comissão</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("Digite o nome do vendedor:");
+        const salarioFixo = parseFloat(prompt("Digite o salário fixo:"));
+        const totalVendas = parseFloat(prompt("Digite o total de vendas efetuadas no mês:"));
+        const comissao = totalVendas * 0.15;
+        const salarioFinal = salarioFixo + comissao;
+
+        document.write(`Nome: ${nome}<br>`);
+        document.write(`Salário Fixo: R$ ${salarioFixo.toFixed(2)}<br>`);
+        document.write(`Salário no Final do Mês: R$ ${salarioFinal.toFixed(2)}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenação Descrescente</title>
+</head>
+<body>
+    <script>
+        const a = parseInt(prompt("Digite o valor A:"));
+        const b = parseInt(prompt("Digite o valor B:"));
+        const c = parseInt(prompt("Digite o valor C:"));
+
+        let valores = [a, b, c];
+        valores.sort((x, y) => y - x);
+
+        document.write(`Valores em ordem decrescente: ${valores.join(", ")}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de Salários Mínimos</title>
+</head>
+<body>
+    <script>
+        const salarioMinimo = 1212.00;
+        const salarioUsuario = parseFloat(prompt("Digite o valor do seu salário:"));
+        const quantidade = salarioUsuario / salarioMinimo;
+
+        document.write(`Você ganha ${quantidade.toFixed(2)} salários mínimos.`);
+    </script>
+</body>
+</html>

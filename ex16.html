@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média das Idades</title>
+</head>
+<body>
+    <script>
+        let somaIdades = 0;
+        for (let i = 0; i < 20; i++) {
+            const idade = parseInt(prompt(`Digite a idade da pessoa ${i + 1}:`));
+            somaIdades += idade;
+        }
+        const mediaIdades = somaIdades / 20;
+        document.write(`A média das idades das 20 pessoas é: ${mediaIdades.toFixed(2)}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números entre 0 e 100</title>
+</head>
+<body>
+    <script>
+        let entre0e100 = 0;
+        for (let i = 0; i < 20; i++) {
+            const numero = parseFloat(prompt(`Digite o número ${i + 1}:`));
+            if (numero >= 0 && numero <= 100) {
+                entre0e100++;
+            }
+        }
+        document.write(`A quantidade de números entre 0 e 100 é: ${entre0e100}`);
+    </script>
+</body>
+</html>
